@@ -34,3 +34,18 @@ predicted output with the true values. Stop repeating when
 a satisfactory accuracy is achieved.
 7. Evaluate the network’s performance using the test dataset.
 
+## 1. Building a digit recognition neural network from scratch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
