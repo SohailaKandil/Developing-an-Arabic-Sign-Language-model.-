@@ -7,10 +7,7 @@ letters and it was able to predict the sign language images with accuracy of 95.
 
 ## 1. Building a digit recognition neural network from scratch
 ### 1.1. Digits dataset description
-Description: In this project, we built a neural network to pre-
-dict digits represented in gray scale images. The dataset con-
-sists of 42,000 images stored in an Excel sheet. Each row rep-
-resents the pixel values of an image, with a size of 28 by 28
+Description: In this project, we built a neural network to predict digits represented in gray scale images. The dataset consists of 42,000 images stored in an Excel sheet. Each row represents the pixel values of an image, with a size of 28 by 28
 pixels (784 total pixels).
 
 [Click this link to access the dataset](https://www.kaggle.com/competitions/digit-recognizer)
@@ -42,8 +39,7 @@ a satisfactory accuracy is achieved.
 ### 2.1. Arabic sign language dataset description
 For this project, we utilized a dataset containing
 53,392 images representing the 32 letters of the Arabic sign
-language (ArSL). Each image has dimensions of 64 by 64 pix-
-els, resulting in a total of 4,096 pixels per image. All pixel
+language (ArSL). Each image has dimensions of 64 by 64 pixels, resulting in a total of 4,096 pixels per image. All pixel
 values range from 0 for black and 255 for white. The dataset is
 
 composed of several JPG images. [click this link to access the dataset](https://www.data-in-brief.com/article/S2352-3409(19)30128-3/fulltext)
