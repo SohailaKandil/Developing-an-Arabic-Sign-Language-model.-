@@ -1,0 +1,98 @@
+%tensorflow_version 2.x
+import tensorflow as tf
+import numpy as np
+
+print(tf.version)
+
+data = tf.zeros([5,5,5,5])
+data = tf.reshape(data , [625])
+
+!pip install -q sklearn
+
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+train = pd.read_csv("https://storage.googleapis.com/tf-datasets/titanic/train.csv") #training data
+test = pd.read_csv("https://storage.googleapis.com/tf-datasets/titanic/eval.csv")
+
+
+
+y_train = train.pop("survived")
+y_test = test.pop("survived")
+print(train["age"] , y_train)
+
+train.describe()
+
+print(train.shape)
+train.age.hist(bins=20)
+
+train["sex"].value_counts().plot(kind="barh")
+
+train["class"].value_counts().plot(kind="barh")
+
+from tensorflow.python import feature_column
+categorical_data =["sex" , "n_siblings_spouses" , "parch" , "class" , "deck" , "embark_town" , "alone"]
+numerical_data = ["age" , "fare"]
+
+feature_columns = []
+for feature in categorical_data:
+  data_types = train[feature].unique()
+  feature_columns.append(tf.feature_column.categorical_column_with_vocabulary_list(feature ,data_types))
+
+for feature in numerical_data:
+  feature_columns.append(tf.feature_column.numeric_column(feature , dtype = tf.float32))
+
+print(feature_columns)
+
+from IPython.core.display import clear_output
+def make_input_function (data_fr , labels , num_epochs = 10 , shuffle= True , batch_size = 32):
+    def input_function():
+      data_set = tf.data.Dataset.from_tensor_slices((dict(data_fr) , labels))
+
+      if shuffle:
+        data_set = data_set.shuffle(1000)
+
+      data_set = data_set.batch(batch_size).repeat(num_epochs)
+      return (data_set)
+    return (input_function)
+train_input_data = make_input_function(train , y_train)
+test_input_data = make_input_function(test , y_test ,num_epochs=1 , shuffle=False)
+
+linear_model = tf.estimator.LinearClassifier(feature_columns = feature_columns)
+#now train your model
+linear_model.train(train_input_data) 
+#now test your model
+result = linear_model.evaluate(test_input_data)
+clear_output()
+print(result)
+
+
+result = list(linear_model.predict(test_input_data))
+print(test.loc[45])
+print(y_test.loc[45])
+print(result[45]["probabilities"][1])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

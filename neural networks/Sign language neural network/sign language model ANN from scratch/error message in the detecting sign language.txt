@@ -1,0 +1,25 @@
+runfile('C:/Users/Sohaila/Documents/هنا حيث الروعة كلها/sign language detection project/neural networks/Sign language neural network/neural network for predicting the sign language.py', wdir='C:/Users/Sohaila/Documents/هنا حيث الروعة كلها/sign language detection project/neural networks/Sign language neural network')
+34345 4097
+AttributeError: 'float' object has no attribute 'exp'
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+
+  File ~\anaconda3\lib\site-packages\spyder_kernels\py3compat.py:356 in compat_exec
+    exec(code, globals, locals)
+
+  File c:\users\sohaila\documents\هنا حيث الروعة كلها\sign language detection project\neural networks\sign language neural network\neural network for predicting the sign language.py:149
+    w1, b1, w2, b2 = design_network (pixels_train , labels_train , 0.1 , 500)
+
+  File c:\users\sohaila\documents\هنا حيث الروعة كلها\sign language detection project\neural networks\sign language neural network\neural network for predicting the sign language.py:113 in design_network
+    z1, a1, z2, a2 = forward_propagation(w1, b1, w2, b2, inp)
+
+  File c:\users\sohaila\documents\هنا حيث الروعة كلها\sign language detection project\neural networks\sign language neural network\neural network for predicting the sign language.py:60 in forward_propagation
+    a2 = soft_max(z2)
+
+  File c:\users\sohaila\documents\هنا حيث الروعة كلها\sign language detection project\neural networks\sign language neural network\neural network for predicting the sign language.py:39 in soft_max
+    return np.exp(z) / sum(np.exp(z))
+
+TypeError: loop of ufunc does not support argument 0 of type float which has no callable exp method
