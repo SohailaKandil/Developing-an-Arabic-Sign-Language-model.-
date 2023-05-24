@@ -82,7 +82,7 @@ enhance the model’s performance. We have specified
 the categorical cross-entropy loss function, which is com-
 monly used for classifying non-binary models that differ-
 entiate between three or more classes.
-10. Model fitting: In this step, as shown in figure 7, we initiate
+10. Model fitting: In this step, we initiate
 the training process by inputting the data into the model
 and performing forward propagation and backward propa-
 gation multiple times. For this particular project, we con-
