@@ -33,7 +33,7 @@ ward propagation. Measure accuracy by comparing the
 predicted output with the true values. Stop repeating when
 a satisfactory accuracy is achieved.
 7. Evaluate the network’s performance using the test dataset.
-8. 
+
 [Most important reference used for this project](https://www.kaggle.com/code/wwsalmon/simple-mnist-nn-from-scratch-numpy-no-tf-keras/notebook)
 
 ## 2. Building an arabic sign language model using keras, Tensorflow library
@@ -43,7 +43,7 @@ For this project, we utilized a dataset containing
 language (ArSL). Each image has dimensions of 64 by 64 pix-
 els, resulting in a total of 4,096 pixels per image. All pixel
 values range from 0 for black and 255 for white. The dataset is
-composed of several JPG images. [click this link to access the dataset]([https://www.openai.com](https://www.data-in-brief.com/article/S2352-3409(19)30128-3/fulltext))
+composed of several JPG images. [click this link to access the dataset]([[https://www.openai.com](https://www.data-in-brief.com/article/S2352-3409(19)30128-3/fulltext)](https://www.data-in-brief.com/article/S2352-3409(19)30128-3/fulltext))
 
 ### 2.2. Project Description: Sign Language Recognition and Interpretation
 The model training and construction involve the following
