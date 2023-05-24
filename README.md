@@ -33,6 +33,7 @@ ward propagation. Measure accuracy by comparing the
 predicted output with the true values. Stop repeating when
 a satisfactory accuracy is achieved.
 7. Evaluate the network’s performance using the test dataset.
+[Most important reference used for this project](https://www.kaggle.com/code/wwsalmon/simple-mnist-nn-from-scratch-numpy-no-tf-keras/notebook)
 
 ## 2. Building an arabic sign language model using keras, Tensorflow library
 ### 2.1. Arabic sign language dataset description
