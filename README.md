@@ -13,5 +13,22 @@ sists of 42,000 images stored in an Excel sheet. Each row rep-
 resents the pixel values of an image, with a size of 28 by 28
 pixels (784 total pixels).
 ### 1.2. Project description
-1. 
+1. Divide the available data into a training set and a testing
+set.
+2. Rescale the pixel values of the dataset by dividing each
+pixel value by 255. This enhances the significance of
+weights in predicting the images and improves accuracy.
+3. Initialize the weights and biases with random values.
+4. Perform the forward propagation function. In this step, the
+network predicts the inputs and calculates the loss function
+(error).
+5. Execute the backward propagation function to adjust the
+weights and biases. This returns the updated weights and
+biases that reduce the error.
+6. Repeat steps 4 and 5, where each forward propagation uses
+the weights and biases obtained from the previous back-
+ward propagation. Measure accuracy by comparing the
+predicted output with the true values. Stop repeating when
+a satisfactory accuracy is achieved.
+7. Evaluate the network’s performance using the test dataset.
 
