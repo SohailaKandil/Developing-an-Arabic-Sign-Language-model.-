@@ -68,7 +68,7 @@ numbers into binary vectors.
 significance of weights in image prediction and improve
 overall accuracy, we rescale each pixel value by dividing
 it by 255.
-8. Designing the model: In this step, as shown in figure 6, we
+8. Designing the model: In this step, we
 construct the layers of the model. Firstly, we add a convo-
 lutional layer with 32 nodes, which allows the model to differentiate between 32 patterns. Next, we incorporate
 two additional convolutional layers with 64 and 128 nodes
