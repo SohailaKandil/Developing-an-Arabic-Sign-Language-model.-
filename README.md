@@ -13,6 +13,8 @@ sists of 42,000 images stored in an Excel sheet. Each row rep-
 resents the pixel values of an image, with a size of 28 by 28
 pixels (784 total pixels).
 ### 1.2. Project description
+Building the Artificial Neural
+Network (ANN) is done through these phases, as follows:
 1. Divide the available data into a training set and a testing
 set.
 2. Rescale the pixel values of the dataset by dividing each
