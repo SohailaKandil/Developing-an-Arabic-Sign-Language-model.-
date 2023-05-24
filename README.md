@@ -1,4 +1,4 @@
-# Developing-an-Arabic-Sign-Language-model.-
+# Developing-an-Arabic-Sign-Language-model using keras, tensorflow library and a digit recognition model from scratch.-
 In this project, I created an Artificial Neural Network (ANN) from scratch to predict digits. The training data consisted of 42000
 images of handwritten digits, and the model achieved an accuracy of approximately 85%.
 Later, I developed a Convolutional Neural Network (CNN), which is better suited for image training, to build a sign language
@@ -35,7 +35,7 @@ a satisfactory accuracy is achieved.
 7. Evaluate the network’s performance using the test dataset.
 
 ## 2. Building an arabic sign language model using keras, Tensorflow library
-### 1.1. Arabic sign language dataset description
+### 2.1. Arabic sign language dataset description
 For this project, we utilized a dataset containing
 53,392 images representing the 32 letters of the Arabic sign
 language (ArSL). Each image has dimensions of 64 by 64 pix-
@@ -43,7 +43,7 @@ els, resulting in a total of 4,096 pixels per image. All pixel
 values range from 0 for black and 255 for white. The dataset is
 composed of several JPG images. [click this link to access the dataset]([https://www.openai.com](https://www.data-in-brief.com/article/S2352-3409(19)30128-3/fulltext))
 
-
+### 2.2. Sign language de
 
 
 
