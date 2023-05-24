@@ -12,6 +12,8 @@ dict digits represented in gray scale images. The dataset con-
 sists of 42,000 images stored in an Excel sheet. Each row rep-
 resents the pixel values of an image, with a size of 28 by 28
 pixels (784 total pixels).
+
+[Click this link to access the dataset](https://www.kaggle.com/competitions/digit-recognizer)
 ### 1.2. Project description
 Building the Artificial Neural
 Network (ANN) is done through these phases, as follows:
@@ -43,6 +45,7 @@ For this project, we utilized a dataset containing
 language (ArSL). Each image has dimensions of 64 by 64 pix-
 els, resulting in a total of 4,096 pixels per image. All pixel
 values range from 0 for black and 255 for white. The dataset is
+
 composed of several JPG images. [click this link to access the dataset](https://www.data-in-brief.com/article/S2352-3409(19)30128-3/fulltext)
 
 ### 2.2. Project Description: Sign Language Recognition and Interpretation
