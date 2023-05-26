@@ -1,3 +1,4 @@
+# Group F2022-06 
 # Developing-an-Arabic-Sign-Language-model-using-keras-tensorflow-library-and-a-digit-recognition-model-from-scratch.
 In this project, I created an Artificial Neural Network (ANN) from scratch to predict digits. The training data consisted of 42000
 images of handwritten digits, and the model achieved an accuracy of approximately 85%.
