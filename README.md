@@ -28,8 +28,7 @@ network predicts the inputs and calculates the loss function
 weights and biases. This returns the updated weights and
 biases that reduce the error.
 6. Repeat steps 4 and 5, where each forward propagation uses
-the weights and biases obtained from the previous back-
-ward propagation. Measure accuracy by comparing the
+the weights and biases obtained from the previous backward propagation. Measure accuracy by comparing the
 predicted output with the true values. Stop repeating when
 a satisfactory accuracy is achieved.
 7. Evaluate the network’s performance using the test dataset.
@@ -48,13 +47,11 @@ composed of several JPG images. [click this link to access the dataset](https://
 ### 2.2. Project Description: Sign Language Recognition and Interpretation
 The model training and construction involve the following
 steps:
-1. Data Preparation: The images are converted into pixel val-
-ues and stored in an Excel sheet. Each row in the sheet
+1. Data Preparation: The images are converted into pixel values and stored in an Excel sheet. Each row in the sheet
 represents the pixel values of a single image.
 2. Train-Test Split: The data is divided into training images
 (50,000) and testing images (remaining).
-3. Shuffling: The data is shuffled to enhance the neural net-
-work’s performance and eliminate potential biases.
+3. Shuffling: The data is shuffled to enhance the neural network’s performance and eliminate potential biases.
 4. Reshaping: The pixel values of each image are reshaped
 into a 64 by 64 format. This is necessary for convolutional
 operations using kernels, as the input to the CNN must
@@ -63,40 +60,31 @@ have the same dimensions as the original image.
 are separated into label arrays and pixel arrays. The index
 i of the labels array corresponds to the label of the pixel
 array at index i.
-6. One-Hot Encoding: The labels are assigned unique num-
-bers, and one-hot encoding is applied to transform these
+6. One-Hot Encoding: The labels are assigned unique numbers, and one-hot encoding is applied to transform these
 numbers into binary vectors.
 7. Rescaling the pixel values of the dataset: To enhance the
 significance of weights in image prediction and improve
 overall accuracy, we rescale each pixel value by dividing
 it by 255.
 8. Designing the model: In this step, we
-construct the layers of the model. Firstly, we add a convo-
-lutional layer with 32 nodes, which allows the model to differentiate between 32 patterns. Next, we incorporate
+construct the layers of the model. Firstly, we add a convolutional layer with 32 nodes, which allows the model to differentiate between 32 patterns. Next, we incorporate
 two additional convolutional layers with 64 and 128 nodes
-respectively. Following that, we flatten the layers and cre-
-ate a dense layer similar to those in an Artificial Neural
-Network (ANN). The purpose of this dense layer is to pro-
-duce the final prediction.
+respectively. Following that, we flatten the layers and create a dense layer similar to those in an Artificial Neural
+Network (ANN). The purpose of this dense layer is to produce the final prediction.
 9. Model compilation: During this step, you specify the
 learning algorithm used and the techniques employed to
 enhance the model’s performance. We have specified
-the categorical cross-entropy loss function, which is com-
-monly used for classifying non-binary models that differ-
-entiate between three or more classes.
+the categorical cross-entropy loss function, which is commonly used for classifying non-binary models that differentiate between three or more classes.
 10. Model fitting: In this step, we initiate
 the training process by inputting the data into the model
-and performing forward propagation and backward propa-
-gation multiple times. For this particular project, we con-
+and performing forward propagation and backward propagation multiple times. For this particular project, we con-
 ducted the fitting process over eight epochs. To streamline
 the training procedure and improve efficiency, we divided
 the data into 391 batches, with each batch containing 128
 samples. This batching approach reduces complexity and
 enhances the overall runtime of the training process.
-11. Model evaluation: During this step, we assess the perfor-
-mance of the model by inputting the test data and making
-predictions using the model. We then calculate the accu-
-racy by comparing the predicted outputs with the actual
+11. Model evaluation: During this step, we assess the performance of the model by inputting the test data and making
+predictions using the model. We then calculate the accuracy by comparing the predicted outputs with the actual
 outputs in the test dataset. The accuracy is determined by
 calculating the average error across the entire test dataset.
 12. Save the model: In this step we save the model as a .h format so that each time we make predictions with the model
