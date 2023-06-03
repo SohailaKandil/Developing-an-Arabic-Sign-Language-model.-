@@ -99,8 +99,7 @@ predictions using the model. We then calculate the accu-
 racy by comparing the predicted outputs with the actual
 outputs in the test dataset. The accuracy is determined by
 calculating the average error across the entire test dataset.
-12. Save the model: In this step we save the model as a .h for-
-mat so that each time we make predictions with the model
+12. Save the model: In this step we save the model as a .h format so that each time we make predictions with the model
 we do not have to train the model again.
 
 # collaporator
